@@ -14,7 +14,7 @@
 <body>
     <div id="form-container" class="contact-us">
     <h2>Form Inventory IT Soll Marina</h2>
-    <form action="https://script.google.com/macros/s/AKfycbxSZtrH286j0ioEOdhJ16bhk7cSzW6OBFplE1eXlwFGHoZhjfVke60L0MI14lieRrEAMw/exec" method="post" enctype="multipart/form-data" id="formInventory">
+    <form action="https://script.google.com/macros/s/AKfycbwkjZM8dpeiuvQmRS-IU3TYIrDi2NcJG_ChweWI767C46Fax65czx_Fzdjat4hm9Fc-ZA/exec" id="formInventory" method="post" enctype="multipart/form-data">
         <!-- Tanggal Section -->
         <label for="tgl" class="label">Tanggal kegiatan:</label>
         <input type="date" id="tgl" name="tgl"><br><br>
@@ -146,39 +146,10 @@
             <option value="Normal">Semua Normal</option>
             <option value="Tidak Normal">Beberapa Tidak Normal</option>
         </select><br><br>
-  
-        <button value="submit">Simpan Data</button>
+
+    <button type="submit">Simpan Data</button>
     </form>
 </div>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            var formdata = $('#formInventory').serializeArray();
-            formdata.push({
-                name: 'myfile',
-                value: myfile
-            });
-            google.script.run.withSuccessHandler(success).processForm(formdata);
-        }
 
-        function success() {
-            document.getElementById("formInventory").reset();
-            Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Data Terkirim',
-                showConfirmButton: false,
-                timer: 1500
-            });
-        }
-        
-        // Set default values
-        function setDefaultValues() {
-            var numberFields = document.querySelectorAll('input[type="number"]');
-            numberFields.forEach(field => field.value = 0);
-        }
-        document.addEventListener('DOMContentLoaded', setDefaultValues);
-    </script>
 </body>
 </html>
