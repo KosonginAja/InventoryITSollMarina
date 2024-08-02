@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inventory IT Soll Marina</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <h2>Form Inventory IT Soll Marina</h2>
+    <form action="https://script.google.com/macros/s/AKfycbx2jvBobd6w4Zhnr8uwLg5VmugkyHPHXVKnYFT7oDCe1mZVdXcrlqBlVamkEjhydYrOeA/exec" method="post" enctype="multipart/form-data" id="formInventaris">
+        <!-- Tanggal Section -->
+        <label for="tgl" class="label">Tanggal kegiatan:</label>
+        <input type="date" id="tgl" name="tgl"><br><br>
+
+        <!-- Departemen Section -->
+        <label for="depart">Departemen:</label>
+        <select id="depart" name="depart">
+            <option value="HK">HK</option>
+            <option value="FO">FO</option>
+            <option value="SM">SM</option>
+            <option value="A&G">A&G</option>
+            <option value="ACCOUNTING">ACCOUNTING</option>
+            <option value="ENG">ENG</option>
+            <option value="FBP">FBP</option>
+            <option value="FBS">FBS</option>
+        </select><br><br>
+      
+        <label for="namaUser">Nama User:</label>
+        <input type="text" id="namaUser" name="namaUser"><br><br>
+  
+        <!-- PC Section -->
+        <h3>PC</h3>
+        <label for="pcAda">Ada/Tidak:</label>
+        <select id="pcAda" name="pcAda">
+            <option value="Tidak">Tidak Ada</option>
+            <option value="Ada">Ada</option>
+        </select><br><br>
+        <label for="jumlahPC">Jumlah:</label>
+        <input type="number" id="jumlahPC" name="jumlahPC" value="0" min="0"><br><br>
+        <label for="kondisiPC">Kondisi:</label>
+        <select id="kondisiPC" name="kondisiPC">
+            <option value="Tidakada value">Tidak Ada</option>
+            <option value="Normal">Semua Normal</option>
+            <option value="Tidak Normal">Beberapa Tidak Normal</option>
+        </select><br><br>
+  
+        <!-- Printer Section -->
+        <h3>Printer</h3>
+        <label for="printerAda">Ada/Tidak:</label>
+        <select id="printerAda" name="printerAda">
+            <option value="Tidak">Tidak Ada</option>
+            <option value="Ada">Ada</option>
+        </select><br><br>
+        <label for="jumlahPrinter">Jumlah:</label>
+        <input type="number" id="jumlahPrinter" name="jumlahPrinter" value="0" min="0"><br><br>
+        <label for="kondisiPrinter">Kondisi:</label>
+        <select id="kondisiPrinter" name="kondisiPrinter">
+            <option value="Tidakada value">Tidak Ada</option>
+            <option value="Normal">Semua Normal</option>
+            <option value="Tidak Normal">Beberapa Tidak Normal</option>
+        </select><br><br>
+  
+        <!-- HDD Extra Section -->
+        <h3>HDD Extra</h3>
+        <label for="hddAda">Ada/Tidak:</label>
+        <select id="hddAda" name="hddAda">
+            <option value="Tidak">Tidak Ada</option>
+            <option value="Ada">Ada</option>
+        </select><br><br>
+        <label for="jumlahHDD">Jumlah:</label>
+        <input type="number" id="jumlahHDD" name="jumlahHDD" value="0" min="0"><br><br>
+        <label for="kondisiHDD">Kondisi:</label>
+        <select id="kondisiHDD" name="kondisiHDD">
+            <option value="Tidakada value">Tidak Ada</option>
+            <option value="Normal">Semua Normal</option>
+            <option value="Tidak Normal">Beberapa Tidak Normal</option>
+        </select><br><br>
+  
+        <!-- Laptop Section -->
+        <h3>Laptop</h3>
+        <label for="laptopAda">Ada/Tidak:</label>
+        <select id="laptopAda" name="laptopAda">
+            <option value="Tidak">Tidak Ada</option>
+            <option value="Ada">Ada</option>
+        </select><br><br>
+        <label for="jumlahLaptop">Jumlah:</label>
+        <input type="number" id="jumlahLaptop" name="jumlahLaptop" value="0" min="0"><br><br>
+        <label for="kondisiLaptop">Kondisi:</label>
+        <select id="kondisiLaptop" name="kondisiLaptop">
+            <option value="Tidakada value">Tidak Ada</option>
+            <option value="Normal">Semua Normal</option>
+            <option value="Tidak Normal">Beberapa Tidak Normal</option>
+        </select><br><br>
+  
+        <!-- Flashdisk Section -->
+        <h3>Flashdisk</h3>
+        <label for="flashdiskAda">Ada/Tidak:</label>
+        <select id="flashdiskAda" name="flashdiskAda">
+            <option value="Tidak">Tidak Ada</option>
+            <option value="Ada">Ada</option>
+        </select><br><br>
+        <label for="jumlahFlashdisk">Jumlah:</label>
+        <input type="number" id="jumlahFlashdisk" name="jumlahFlashdisk" value="0" min="0"><br><br>
+        <label for="kondisiFlashdisk">Kondisi:</label>
+        <select id="kondisiFlashdisk" name="kondisiFlashdisk">
+            <option value="Tidakada value">Tidak Ada</option>
+            <option value="Normal">Semua Normal</option>
+            <option value="Tidak Normal">Beberapa Tidak Normal</option>
+        </select><br><br>
+  
+        <!-- Monitor Section -->
+        <h3>Monitor</h3>
+        <label for="monitorAda">Ada/Tidak:</label>
+        <select id="monitorAda" name="monitorAda">
+            <option value="Tidak">Tidak Ada</option>
+            <option value="Ada">Ada</option>
+        </select><br><br>
+        <label for="jumlahMonitor">Jumlah:</label>
+        <input type="number" id="jumlahMonitor" name="jumlahMonitor" value="0" min="0"><br><br>
+        <label for="kondisiMonitor">Kondisi:</label>
+        <select id="kondisiMonitor" name="kondisiMonitor">
+            <option value="Tidakada value">Tidak Ada</option>
+            <option value="Normal">Semua Normal</option>
+            <option value="Tidak Normal">Beberapa Tidak Normal</option>
+        </select><br><br>
+  
+        <!-- Router Section -->
+        <h3>Router</h3>
+        <label for="routerAda">Ada/Tidak:</label>
+        <select id="routerAda" name="routerAda">
+            <option value="Tidak">Tidak Ada</option>
+            <option value="Ada">Ada</option>
+        </select><br><br>
+        <label for="jumlahRouter">Jumlah:</label>
+        <input type="number" id="jumlahRouter" name="jumlahRouter" value="0" min="0"><br><br>
+        <label for="kondisiRouter">Kondisi:</label>
+        <select id="kondisiRouter" name="kondisiRouter">
+            <option value="Tidakada value">Tidak Ada</option>
+            <option value="Normal">Semua Normal</option>
+            <option value="Tidak Normal">Beberapa Tidak Normal</option>
+        </select><br><br>
+  
+        <button value="submit">Simpan Data</button>
+    </form>
+  
+    <script>
+        document.getElementById('formInventaris').addEventListener('submit', function(e) {
+            e.preventDefault();
+      
+            var form = this;
+            var formData = new FormData(form);
+      
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.result === 'success') {
+                    alert('Form berhasil dikirim');
+                    form.reset();
+                    setDefaultValues();
+                } else {
+                    alert('Gagal mengirim form. Silakan coba lagi.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Gagal mengirim form. Silakan coba lagi.');
+            });
+        });
+
+        // Set default values
+        function setDefaultValues() {
+            var numberFields = document.querySelectorAll('input[type="number"]');
+            numberFields.forEach(field => field.value = 0);
+        }
+
+        document.addEventListener('DOMContentLoaded', setDefaultValues);
+    </script>
+</body>
+</html>

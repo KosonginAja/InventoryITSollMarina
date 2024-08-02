@@ -1,0 +1,32 @@
+Form Inventory IT Soll Marina
+(Devisi > dropdown
+1. HK
+2. FO
+3. SM
+4. A&G
+5. ACCOUNTING
+6. ENG
+7. FBP
+8. FBS)
+(Nama User > Input)
+(- PC > Dropdown(Ada/Tidak)
+Jumlah > Input Number
+Kondisi > Dropdown(Normal/tidak normal))
+(- Printer > Dropdown(Ada/Tidak)
+Jumlah > Input Number
+Kondisi > Dropdown(Normal/tidak normal))
+(- HDD Extra > Dropdown(Ada/Tidak)
+Jumlah > Input Number
+Kondisi > Dropdown(Normal/tidak normal))
+(- Laptop > Dropdown(Ada/Tidak)
+Jumlah > Input Number
+Kondisi > Dropdown(Normal/tidak normal))
+(- Flashdisk > Dropdown(Ada/Tidak)
+Jumlah > Input Number
+Kondisi > Dropdown(Normal/tidak normal))
+(- Monitor > Dropdown(Ada/Tidak)
+Jumlah > Input Number
+Kondisi > Dropdown(Normal/tidak normal))
+(- Router > Dropdown(Ada/Tidak)
+Jumlah > Input Number
+Kondisi > Dropdown(Normal/tidak normal))
