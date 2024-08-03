@@ -1,0 +1,111 @@
+:root {
+    --color-back: #7FA1C3;
+    --color-primary: #6482AD;
+    --color-secondary: #E2DAD6;
+    --color-bg: #F5EDED;
+    --color-input: #FFFFFF;
+    --color-text: #333;
+    --color-shadow: #babecc;
+    --color-white: #fff;
+    --ruler: 16px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+  }
+  
+  body {
+    background-color: var(--color-back);
+    overflow-x: hidden;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .contact-us {
+    background: var(--color-bg);
+    padding: 50px 100px;
+    border: 2px solid var(--color-primary);
+    border-radius: 15px;
+    box-shadow: 15px 15px 1px var(--color-primary), 15px 15px 1px 2px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .form-section {
+    margin-top: 30px;
+  }
+  
+  body, p, input, select, textarea, button {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.2px;
+    font-size: var(--ruler);
+  }
+  
+  div, p {
+    color: var(--color-text);
+    text-shadow: 1px 1px 1px var(--color-white);
+  }
+  
+  form {
+    padding: var(--ruler);
+    width: calc(var(--ruler) * 20);
+    margin: 0 auto;
+  }
+  
+  input, select {
+    border: 0;
+    outline: 0;
+    font-size: var(--ruler);
+    border-radius: 100px;
+    padding: var(--ruler);
+    background-color: var(--color-input); 
+    color: var(--color-text);
+    text-shadow: 1px 1px 0 var(--color-white);
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--color-input) url('data:image/svg+xml;utf8,<svg fill="black" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    padding-right: 15px; 
+  }
+  
+  input:focus, select:focus {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+  
+  .label {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    line-height: 28pt;
+    padding: 0 20px;
+    background: var(--color-primary);
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+  }
+  
+  button:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+  }
+  
