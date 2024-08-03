@@ -1,160 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Inventory IT Soll Marina</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <style>
-        .uppercase {
-            text-transform: uppercase;
-        }
-    </style>
-</head>
-<body>
-    <div id="form-container" class="contact-us">
-    <h2>Form Inventory IT Soll Marina</h2>
-    <form action="https://script.google.com/macros/s/AKfycbwyCsQxxYtviK1yVVU7VH8t07pcEKhjXypi8_A90DGftY5dvxBT2OuYEKKhvjq0SgQ12w/exec" id="formInventory" method="post" enctype="multipart/form-data">
-        <!-- Tanggal Section -->
-        <label for="tgl" class="label">Tanggal kegiatan:</label>
-        <input type="date" id="tgl" name="tgl"><br><br>
-
-        <!-- Departemen Section -->
-        <label for="depart">Departemen:</label>
-        <select id="depart" name="depart">
-            <option value="HK">HK</option>
-            <option value="FO">FO</option>
-            <option value="SM">SM</option>
-            <option value="A&G">A&G</option>
-            <option value="ACCOUNTING">ACCOUNTING</option>
-            <option value="ENG">ENG</option>
-            <option value="FBP">FBP</option>
-            <option value="FBS">FBS</option>
-        </select><br><br>
-      
-        <label for="namaUser">Nama User:</label>
-        <input type="text" id="namaUser" name="namaUser" class="uppercase"><br><br>
+:root {
+    --color-back: #7FA1C3;
+    --color-primary: #6482AD;
+    --color-secondary: #E2DAD6;
+    --color-bg: #F5EDED;
+    --color-input: #FFFFFF;
+    --color-text: #333;
+    --color-shadow: #babecc;
+    --color-white: #fff;
+    --ruler: 16px;
+  }
   
-        <!-- PC Section -->
-        <h3>PC</h3>
-        <label for="pcAda">Ada/Tidak:</label>
-        <select id="pcAda" name="pcAda">
-            <option value="Tidak">Tidak Ada</option>
-            <option value="Ada">Ada</option>
-        </select><br><br>
-        <label for="jumlahPC">Jumlah:</label>
-        <input type="number" id="jumlahPC" name="jumlahPC" value="0" min="0"><br><br>
-        <label for="kondisiPC">Kondisi:</label>
-        <select id="kondisiPC" name="kondisiPC">
-            <option value="Tidakada value">Tidak Ada</option>
-            <option value="Normal">Semua Normal</option>
-            <option value="Tidak Normal">Beberapa Tidak Normal</option>
-        </select><br><br>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+  }
   
-        <!-- Printer Section -->
-        <h3>Printer</h3>
-        <label for="printerAda">Ada/Tidak:</label>
-        <select id="printerAda" name="printerAda">
-            <option value="Tidak">Tidak Ada</option>
-            <option value="Ada">Ada</option>
-        </select><br><br>
-        <label for="jumlahPrinter">Jumlah:</label>
-        <input type="number" id="jumlahPrinter" name="jumlahPrinter" value="0" min="0"><br><br>
-        <label for="kondisiPrinter">Kondisi:</label>
-        <select id="kondisiPrinter" name="kondisiPrinter">
-            <option value="Tidakada value">Tidak Ada</option>
-            <option value="Normal">Semua Normal</option>
-            <option value="Tidak Normal">Beberapa Tidak Normal</option>
-        </select><br><br>
+  body {
+    background-color: var(--color-back);
+    overflow-x: hidden;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
   
-        <!-- HDD Extra Section -->
-        <h3>HDD Extra</h3>
-        <label for="hddAda">Ada/Tidak:</label>
-        <select id="hddAda" name="hddAda">
-            <option value="Tidak">Tidak Ada</option>
-            <option value="Ada">Ada</option>
-        </select><br><br>
-        <label for="jumlahHDD">Jumlah:</label>
-        <input type="number" id="jumlahHDD" name="jumlahHDD" value="0" min="0"><br><br>
-        <label for="kondisiHDD">Kondisi:</label>
-        <select id="kondisiHDD" name="kondisiHDD">
-            <option value="Tidakada value">Tidak Ada</option>
-            <option value="Normal">Semua Normal</option>
-            <option value="Tidak Normal">Beberapa Tidak Normal</option>
-        </select><br><br>
+  .contact-us {
+    background: var(--color-bg);
+    padding: 50px 100px;
+    border: 2px solid var(--color-primary);
+    border-radius: 15px;
+    box-shadow: 15px 15px 1px var(--color-primary), 15px 15px 1px 2px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   
-        <!-- Laptop Section -->
-        <h3>Laptop</h3>
-        <label for="laptopAda">Ada/Tidak:</label>
-        <select id="laptopAda" name="laptopAda">
-            <option value="Tidak">Tidak Ada</option>
-            <option value="Ada">Ada</option>
-        </select><br><br>
-        <label for="jumlahLaptop">Jumlah:</label>
-        <input type="number" id="jumlahLaptop" name="jumlahLaptop" value="0" min="0"><br><br>
-        <label for="kondisiLaptop">Kondisi:</label>
-        <select id="kondisiLaptop" name="kondisiLaptop">
-            <option value="Tidakada value">Tidak Ada</option>
-            <option value="Normal">Semua Normal</option>
-            <option value="Tidak Normal">Beberapa Tidak Normal</option>
-        </select><br><br>
+  .form-section {
+    margin-top: 30px;
+  }
   
-        <!-- Flashdisk Section -->
-        <h3>Flashdisk</h3>
-        <label for="flashdiskAda">Ada/Tidak:</label>
-        <select id="flashdiskAda" name="flashdiskAda">
-            <option value="Tidak">Tidak Ada</option>
-            <option value="Ada">Ada</option>
-        </select><br><br>
-        <label for="jumlahFlashdisk">Jumlah:</label>
-        <input type="number" id="jumlahFlashdisk" name="jumlahFlashdisk" value="0" min="0"><br><br>
-        <label for="kondisiFlashdisk">Kondisi:</label>
-        <select id="kondisiFlashdisk" name="kondisiFlashdisk">
-            <option value="Tidakada value">Tidak Ada</option>
-            <option value="Normal">Semua Normal</option>
-            <option value="Tidak Normal">Beberapa Tidak Normal</option>
-        </select><br><br>
+  body, p, input, select, textarea, button {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.2px;
+    font-size: var(--ruler);
+  }
   
-        <!-- Monitor Section -->
-        <h3>Monitor</h3>
-        <label for="monitorAda">Ada/Tidak:</label>
-        <select id="monitorAda" name="monitorAda">
-            <option value="Tidak">Tidak Ada</option>
-            <option value="Ada">Ada</option>
-        </select><br><br>
-        <label for="jumlahMonitor">Jumlah:</label>
-        <input type="number" id="jumlahMonitor" name="jumlahMonitor" value="0" min="0"><br><br>
-        <label for="kondisiMonitor">Kondisi:</label>
-        <select id="kondisiMonitor" name="kondisiMonitor">
-            <option value="Tidakada value">Tidak Ada</option>
-            <option value="Normal">Semua Normal</option>
-            <option value="Tidak Normal">Beberapa Tidak Normal</option>
-        </select><br><br>
+  div, p {
+    color: var(--color-text);
+    text-shadow: 1px 1px 1px var(--color-white);
+  }
   
-        <!-- Router Section -->
-        <h3>Router</h3>
-        <label for="routerAda">Ada/Tidak:</label>
-        <select id="routerAda" name="routerAda">
-            <option value="Tidak">Tidak Ada</option>
-            <option value="Ada">Ada</option>
-        </select><br><br>
-        <label for="jumlahRouter">Jumlah:</label>
-        <input type="number" id="jumlahRouter" name="jumlahRouter" value="0" min="0"><br><br>
-        <label for="kondisiRouter">Kondisi:</label>
-        <select id="kondisiRouter" name="kondisiRouter">
-            <option value="Tidakada value">Tidak Ada</option>
-            <option value="Normal">Semua Normal</option>
-            <option value="Tidak Normal">Beberapa Tidak Normal</option>
-        </select><br><br>
-
-    <button type="submit">Simpan Data</button>
-    </form>
-</div>
-
-</body>
-</html>
+  form {
+    padding: var(--ruler);
+    width: calc(var(--ruler) * 20);
+    margin: 0 auto;
+  }
+  
+  input, select {
+    border: 0;
+    outline: 0;
+    font-size: var(--ruler);
+    border-radius: 100px;
+    padding: var(--ruler);
+    background-color: var(--color-input); 
+    color: var(--color-text);
+    text-shadow: 1px 1px 0 var(--color-white);
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--color-input) url('data:image/svg+xml;utf8,<svg fill="black" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    padding-right: 15px; 
+  }
+  
+  input:focus, select:focus {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+  
+  .label {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    line-height: 28pt;
+    padding: 0 20px;
+    background: var(--color-primary);
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+  }
+  
+  button:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+  }
+  
