@@ -11,7 +11,6 @@
   }
   
   * {
-    display: flex;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,6 +32,7 @@
   }
   
   .contact-us {
+    display: flex;
     background: var(--color-bg);
     padding: 50px 100px;
     border: 2px solid var(--color-primary);
