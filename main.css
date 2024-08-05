@@ -8,9 +8,9 @@
     --color-shadow: #babecc;
     --color-white: #fff;
     --ruler: 16px;
-  }
-  
-  * {
+}
+
+* {
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -18,9 +18,9 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-text);
-  }
-  
-  body {
+}
+
+body {
     background-color: var(--color-back);
     overflow-x: hidden;
     background-size: cover;
@@ -29,9 +29,9 @@
     display: grid;
     align-items: center;
     justify-items: center;
-  }
-  
-  .contact-us {
+}
+
+.contact-us {
     background: var(--color-bg);
     padding: 50px 100px;
     border: 2px solid var(--color-primary);
@@ -39,33 +39,33 @@
     box-shadow: 15px 15px 1px var(--color-primary), 15px 15px 1px 2px black;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-  
-  .form-section,
-  .form-group {
+}
+
+.form-section,
+.form-group {
     margin-top: 30px;
-    width: 100%
-  }
-  
-  body, p, input, select, textarea, button {
+    width: 100%;
+}
+
+body, p, input, select, textarea, button {
     font-family: "Poppins", sans-serif;
     letter-spacing: -0.2px;
     font-size: var(--ruler);
-  }
-  
-  div, p {
+}
+
+div, p {
     color: var(--color-text);
     text-shadow: 1px 1px 1px var(--color-white);
-  }
-  
-  form {
+}
+
+form {
     padding: var(--ruler);
     width: calc(var(--ruler) * 20);
     margin: 0 auto;
     max-width: 600px;
-  }
-  
-  input, select {
+}
+
+input, select {
     border: 0;
     outline: 0;
     font-size: var(--ruler);
@@ -75,38 +75,38 @@
     color: var(--color-text);
     text-shadow: 1px 1px 0 var(--color-white);
     box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
-  }
-  
-  select {
+}
+
+select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: var(--color-input) url('data:image/svg+xml;utf8,<svg fill="black" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
     padding-right: 15px; 
-  }
-  
-  input:focus, select:focus {
+}
+
+input:focus, select:focus {
     box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
-  }
-  
-  .inilogo {
+}
+
+.inilogo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; 
 }
 
-  .logo {
+.logo {
     width: 300px;
     height: auto;
-  }
+}
 
-  .judul {
+.judul {
     margin-bottom: 20px;
     font-size: 1.5rem;
-  }
-  
-  button {
+}
+
+button {
     display: block;
     margin: 0 auto;
     line-height: 28pt;
@@ -118,11 +118,63 @@
     border: 1px solid black;
     box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
     margin-top: 20px
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: black;
     color: white;
     border: 1px solid black;
-  }
-  
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .contact-us {
+        padding: 40px 80px;
+    }
+    .logo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-us {
+        padding: 30px 60px;
+    }
+    .logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 20px 40px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .judul {
+        font-size: 1.2rem;
+    }
+    button {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-us {
+        padding: 10px 20px;
+    }
+    form {
+        padding: 0 10px;
+        width: 100%;
+    }
+    .logo {
+        width: 100px;
+    }
+    .judul {
+        font-size: 1rem;
+    }
+    button {
+        padding: 0 10px;
+    }
+}
