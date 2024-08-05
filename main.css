@@ -90,13 +90,13 @@
   }
   
   .inilogo {
+    width: 300px;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; 
 }
 
   .logo {
-    width: 300px;
     height: auto;
   }
 
