@@ -32,7 +32,6 @@
   }
   
   .contact-us {
-    display: flex;
     background: var(--color-bg);
     padding: 50px 100px;
     border: 2px solid var(--color-primary);
@@ -91,6 +90,7 @@
   }
   
   .inilogo {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; 
