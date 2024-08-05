@@ -35,18 +35,50 @@
         h1 {
             margin-bottom: 10px;
         }
+        .inilogo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .contact-us {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .judul {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form {
+            width: 100%;
+            max-width: 600px;
+        }
+        .form-section,
+        .form-group {
+            width: 100%;
+        }
+        button {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div id="form-container" class="contact-us">
-        <label class="label">Form Inventory IT Soll Marina</label>
+        <div class="inilogo">
+            <img src="assets/logo1.png" class="logo"  alt="Logo">
+        </div>
+        <label class="judul">Form Inventory IT Soll Marina Hotel Serpong</label>
         <form action="https://script.google.com/macros/s/AKfycbzTECYf6xFsRz01E1B_l5AOfdpNrcZjLMkeEvJBN6vL0njJ1dBZUeoe5pIKP4NPxjMxFA/exec" id="formInventory" method="post" enctype="multipart/form-data">
             <!-- Tanggal Section -->
             <div class="form-section">
                 <label for="tgl" class="label">Tanggal:</label>
-                <input type="date" id="tgl" name="tgl">
+                <input type="date" id="tgl" name="tgl" required>
             </div>
-
             <!-- Departemen Section -->
             <div class="form-section">
                 <label for="depart" class="label">Departemen:</label>
@@ -61,12 +93,11 @@
                     <option value="FBS">FBS</option>
                 </select>
             </div>
-            
+            <!-- Nama User Section -->
             <div class="form-section">
                 <label for="namaUser" class="label">Nama User:</label>
-                <input type="text" id="namaUser" name="namaUser">
+                <input type="text" id="namaUser" name="namaUser" required>
             </div>
-        
             <!-- PC Section -->
             <div class="form-section">
                 <h1>PC</h1>
@@ -91,7 +122,6 @@
                     </select>
                 </div>
             </div>
-        
             <!-- Printer Section -->
             <div class="form-section">
                 <h1>Printer</h1>
@@ -116,7 +146,6 @@
                     </select>
                 </div>
             </div>
-        
             <!-- HDD Extra Section -->
             <div class="form-section">
                 <h1>HDD Extra</h1>
@@ -141,7 +170,6 @@
                     </select>
                 </div>
             </div>
-        
             <!-- Laptop Section -->
             <div class="form-section">
                 <h1>Laptop</h1>
@@ -166,7 +194,6 @@
                     </select>
                 </div>
             </div>
-        
             <!-- Flashdisk Section -->
             <div class="form-section">
                 <h1>Flashdisk</h1>
@@ -191,7 +218,6 @@
                     </select>
                 </div>
             </div>
-        
             <!-- Monitor Section -->
             <div class="form-section">
                 <h1>Monitor</h1>
@@ -216,7 +242,6 @@
                     </select>
                 </div>
             </div>
-
             <!-- Router Section -->
             <div class="form-section">
                 <h1>Router</h1>
@@ -241,7 +266,6 @@
                     </select>
                 </div>
             </div>
-
             <button type="submit">Simpan Data</button>
         </form>
     </div>
