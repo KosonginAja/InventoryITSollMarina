@@ -33,7 +33,7 @@ body {
 
 .contact-us {
     background: var(--color-bg);
-    padding: 50px 100px;
+    padding: 50px 20px;
     border: 2px solid var(--color-primary);
     border-radius: 15px;
     box-shadow: 15px 15px 1px var(--color-primary), 15px 15px 1px 2px black;
@@ -75,6 +75,7 @@ input, select {
     color: var(--color-text);
     text-shadow: 1px 1px 0 var(--color-white);
     box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    width: 100%; /* Make sure input and select have the same width */
 }
 
 select {
@@ -117,7 +118,7 @@ button {
     outline: none;
     border: 1px solid black;
     box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 button:hover {
@@ -125,6 +126,18 @@ button:hover {
     color: white;
     border: 1px solid black;
 }
-        padding: 0 10px;
+
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 30px 15px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 10px;
     }
 }
