@@ -18,6 +18,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-text);
+    box-sizing: border-box;
 }
 
 body {
@@ -25,10 +26,10 @@ body {
     overflow-x: hidden;
     background-size: cover;
     width: 100vw;
-    height: 100%;
-    display: grid;
+    height: 100vh;
+    display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 .contact-us {
@@ -39,6 +40,8 @@ body {
     box-shadow: 15px 15px 1px var(--color-primary), 15px 15px 1px 2px black;
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .form-section,
@@ -60,9 +63,8 @@ div, p {
 
 form {
     padding: var(--ruler);
-    width: calc(var(--ruler) * 20);
+    width: 100%;
     margin: 0 auto;
-    max-width: 600px;
 }
 
 input, select {
@@ -75,7 +77,8 @@ input, select {
     color: var(--color-text);
     text-shadow: 1px 1px 0 var(--color-white);
     box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
-    width: 100%; /* Make sure input and select have the same width */
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 select {
@@ -83,7 +86,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: var(--color-input) url('data:image/svg+xml;utf8,<svg fill="black" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
-    padding-right: 15px; 
+    padding-right: 35px;
 }
 
 input:focus, select:focus {
@@ -105,6 +108,7 @@ input:focus, select:focus {
 .judul {
     margin-bottom: 20px;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 button {
@@ -133,7 +137,7 @@ button:hover {
     }
 
     form {
-        width: 90%;
+        width: 100%;
     }
 
     input, select {
