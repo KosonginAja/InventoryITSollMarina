@@ -178,3 +178,21 @@ button:hover {
         padding: 0 10px;
     }
 }
+@media (max-width: 360px) {
+    .contact-us {
+        padding: 5px 8px;
+    }
+    form {
+        padding: 0 10px;
+        width: 100%;
+    }
+    .logo {
+        width: 100px;
+    }
+    .judul {
+        font-size: 1rem;
+    }
+    button {
+        padding: 0 10px;
+    }
+}
