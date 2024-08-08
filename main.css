@@ -78,6 +78,10 @@ input, select {
     box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
 }
 
+.itgl {
+    width: 93.3%;
+}
+
 select {
     appearance: none;
     -webkit-appearance: none;
@@ -136,6 +140,9 @@ button:hover {
     .logo {
         width: 250px;
     }
+    .itgl {
+        width: 93.3%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -145,6 +152,9 @@ button:hover {
     }
     .logo {
         width: 200px;
+    }
+    .itgl {
+        width: 93.3%;
     }
 }
 
@@ -161,6 +171,9 @@ button:hover {
     }
     button {
         padding: 0 15px;
+    }
+    .itgl {
+        width: 93.3%;
     }
 }
 
@@ -183,6 +196,9 @@ button:hover {
     button {
         padding: 0 10px;
     }
+    .itgl {
+        width: 90.3%;
+    }
 }
 @media (max-width: 360px) {
     .contact-us {
@@ -195,7 +211,7 @@ button:hover {
         width: 100%;
     }
     .logo {
-        width: 120px;
+        width: 100px;
     }
     .judul {
         font-size: 1rem;
@@ -203,5 +219,8 @@ button:hover {
     button {
         padding: 0 10px;
         margin-bottom: 20px;
+    }
+    .itgl {
+        width: 89.3%;
     }
 }
