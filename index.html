@@ -259,5 +259,14 @@
             <button type="submit">Simpan Data</button>
         </form>
     </div>
+    <script>
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('input', (e) => {
+                if (input.value.startsWith('0') && input.value.length > 1) {
+                    input.value = input.value.replace(/^0+/, '');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
