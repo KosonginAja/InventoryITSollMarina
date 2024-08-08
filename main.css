@@ -202,5 +202,6 @@ button:hover {
     }
     button {
         padding: 0 10px;
+        margin-bottom: 20px;
     }
 }
